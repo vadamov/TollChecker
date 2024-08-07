@@ -12,6 +12,10 @@ This project is an educational exercise created to demonstrate automated testing
 This project was developed as a practice exercise to explore the capabilities of Selenium WebDriver for automating web interactions and to practice writing automated tests with TestNG.
 It’s a great example of how to use these tools for web testing, though it is not intended for production use.
 
+**Performance**
+
+TollChecker is optimized for performance, handling a large number of checks and number plates with impressive speed.
+
 **Prerequisites**
 **Java JDK 17**: Ensure you have Java Development Kit 17 installed.
 
