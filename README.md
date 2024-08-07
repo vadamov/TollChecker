@@ -25,3 +25,24 @@ To check the toll payment statuses:
 **2**.Check Status: The system will verify if the toll is paid and handle the result accordingly.
 
 **3**.View Results: Results are printed to the console, showing valid and expired tolls.
+
+**Customizing Data**
+The number plates used in the tests are provided in the **DataProviderClass**. You can modify or add new number plates by editing the class.
+
+
+**Code Overview**
+**BrowserActions**: Manages browser setup, including headless Chrome configuration and WebDriver initialization.
+
+**TollPage**: Contains methods for interacting with the web page, such as entering number plates and clicking buttons.
+
+**DateUtils**: Provides utility methods for parsing and formatting date information.
+
+**ResultHandler**: Handles and stores the results of toll status checks, differentiating between valid and expired results.
+
+**StatusValidator**: Validates that the toll status displayed on the page matches the expected status.
+
+**TollValidation**: Handles the validation of toll statuses, including error handling and result categorization.
+
+**DataProviderClass**: Supplies test data for the toll checks, including number plates and expected results.
+
+**TollCheckTest**: Contains the test cases that run the toll verification process using the provided data.
