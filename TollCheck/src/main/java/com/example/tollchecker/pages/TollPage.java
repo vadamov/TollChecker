@@ -21,12 +21,23 @@ public class TollPage {
     public void enterNumberPlate(String numberPlate) {
         driver.findElement(INPUT_FIELD).sendKeys(numberPlate);
     }
-public void clearInputField(){
+
+    public void clearInputField() {
         driver.findElement(INPUT_FIELD).clear();
-}
+    }
+
     //Click on the check button
     public void clickCheckButton() {
         driver.findElement(CHECK_BUTTON).click();
+        setWait();
+    }
+
+    private void setWait() {
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     public WebElement getStatusElement() {
